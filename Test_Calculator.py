@@ -83,13 +83,13 @@ tasks = [
     partial(Test_increment_a),
     partial(Test_increment_b),
     partial(Test_decrement_b),
-
 ]
 
 for task in tasks:
-    time.sleep(2)
     task()
+    time.sleep(2)
 
 
 
 driver.quit()
+
